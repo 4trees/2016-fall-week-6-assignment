@@ -1,0 +1,6 @@
+.bar{
+	background-color: black;
+}
+.axis line, .axis path{
+    stroke:white;
+}
