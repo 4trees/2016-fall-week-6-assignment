@@ -34,11 +34,9 @@ function dataLoaded(err,rows){
 		newarr=sortarr.slice(0,5);
 	console.log(sortarr,newarr)
 	//make scales
-	var extentY=d3.extent(newarr,function(d){return d.country2012}),
-		maxY=d3.max(newarr,function(d){return d.country2012}),
-		x=newarr.map(function(d){return d.country});
+	var	x=newarr.map(function(d){return d.country});
 	var scaleY=d3.scaleLinear()
-		.domain([0,maxY+20])
+		.domain([0,120])
 		.range([h,0]),
 		scaleX=d3.scaleBand()
 		.range([0,w])
